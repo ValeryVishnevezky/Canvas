@@ -42,8 +42,8 @@ function onMove(ev) {
     const { isDrag } = getShape()
     if (!isDrag) return
     const pos = getEvPos(ev)
-    const distance = Math.sqrt(Math.pow(pos.x - gLastPos.x, 2) + Math.pow(pos.y - gLastPos.y, 2))
-    gShape.size = Math.max(40, Math.min(100, distance * 2))
+    const distance = (pos.x - gLastPos.x) + (gLastPos.y - pos.y)
+    gShape.size = Math.max(20, Math.min(200,Math.abs(distance * 2)))
     onDrawShape(gLastPos.x, gLastPos.y, pos.x, pos.y, gShape.size)
     gLastPos = pos
 }
