@@ -1,0 +1,34 @@
+* {
+  color: #444;
+  font-family: Monospace;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+canvas {
+  background-color: #ffffff;
+  border: 1px solid rgb(193, 193, 193);
+  box-shadow: 0 0 5px 1px rgb(193, 193, 193);
+}
+
+body {
+  margin: 0px;
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+select {
+  text-align: center;
+}
+
+a {
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 0.3rem;
+  border: none;
+}
